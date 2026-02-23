@@ -1,36 +1,40 @@
-# Sales-Project
-This project analyzes sales data to uncover trends in revenue, profit, customer behavior, and regional performance. It explores product categories, sales channels, and customer types to identify top-performing areas and support data-driven business decisions.
+  Sales Data Analysis
 
-📊 Dataset Overview
+  Project Overview
+This project focuses on analyzing sales data to uncover insights related to revenue, profit, customer behavior, and regional performance. The analysis helps identify top-performing products, sales channels, and regions, supporting data-driven business decision-making.
 
-Date & Month of sales
+  Dataset Description
+The dataset contains transactional sales records with the following attributes:
+- Date of sale
+- Region and City
+- Product and Product Category
+- Customer Type
+- Sales Channel
+- Sales Representative
+- Revenue, Cost of Goods Sold (COGS), and Profit
 
-Region and City
+  Data Preparation
+- Extracted the Month field from the Date column using "=TEXT([@Date],"MMMM")"
+- Calculated Revenue,(=[@[Unit Price]]*[@Quantity]) Cost of Goods Sold (COGS) (=[@Quantity]*[@[Cost Price]]), and Profit (=[@Revenue]-[@COGS])
+- Ensured accuracy and consistency of derived fields for analysis
 
-Customer Type (Retail / Corporate)
+  Objectives
+- Analyze sales performance across regions and cities
+- Identify top-performing products and product categories
+- Compare revenue and profit across sales channels and customer types
+- Evaluate sales representative performance
+- Understand monthly sales trends
 
-Sales Channel (Online / Store)
+  Key Insights
+- Identified regions and cities contributing the highest revenue and profit
+- Analyzed product categories with the strongest sales performance
+- Compared profitability across sales channels
+- Highlighted top-performing sales representatives
 
-Product & Category
+  Tools
+- Microsoft Excel
+- Excel formulas and functions
+- Pivot tables and charts
 
-Revenue, Cost, and Profit
-
-
-🎯 Objectives
-
-Analyze revenue and profit trends
-
-Identify top-performing products and categories
-
-Compare sales performance across regions and channels
-
-Evaluate sales representatives’ performance
-
-
-🛠 Tools & Technologies
-
-Excel / Python (pandas)
-
-Data cleaning and analysis
-
-Pivot tables/visualizations
+  Conclusion
+This project demonstrates practical data analysis skills using Excel, including data preparation, metric calculation, and performance analysis. The insights generated can support strategic sales and business decisions.
